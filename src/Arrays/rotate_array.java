@@ -53,6 +53,7 @@ public class rotate_array {
 
 */
 //To manage the time complexity we use reversing approach to tackle the question
+ // this is called reversal algorithm 
 
 package Arrays;
 
@@ -71,11 +72,19 @@ public class rotate_array {
 	public static void Rotate(int[] arr ,int k) {
 		int n=arr.length;
 		k=k%n;
-		
+		/*
 		reverse(arr,0,n-1);
 		reverse(arr,0,k-1);
-		reverse(arr,k,n-1);
-				}
+		reverse(arr,k,n-1);*/
+		
+		// starting n-k 
+		reverse(arr,0,n-k-1);
+		//last k elements
+		reverse(arr,n-k,n-1);
+		//all elements reverse
+		reverse(arr,0,n-1);
+		
+	}
 	
 	
 	public static void reverse(int[] arr,int start,int end) {

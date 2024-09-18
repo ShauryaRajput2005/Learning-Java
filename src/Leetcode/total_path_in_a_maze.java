@@ -1,4 +1,4 @@
-package Recursion;
+package Leetcode;
 
 public class total_path_in_a_maze {
 	public static int paths(int i,int j,int n,int m) {

@@ -1,4 +1,4 @@
-package Recursion;
+package Leetcode;
 import java.util.*;
 
 public class permutations_of_list {
