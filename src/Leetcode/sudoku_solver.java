@@ -1,4 +1,4 @@
-package Recursion;
+package Leetcode;
 
 public class sudoku_solver {
 
